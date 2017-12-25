@@ -39,6 +39,6 @@ public class CostFunction implements ICostFunction {
     }
 
     public int getMaximumValue(int n){
-        return n*(n-3)/2;
+        return n*(n-3)/2 + n;
     }
 }
