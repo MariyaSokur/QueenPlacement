@@ -27,7 +27,18 @@ public class CostFunction implements ICostFunction {
             }
         }
         for(int i=0; i < result.length; i++)
-            result[i] = 28 - result[i];
+            result[i] = getMaximumValue(array[0].length) - result[i];
         return result;
+    }
+
+    public int validate(int[] costs, int n) {
+        for(int i=0; i< costs.length; i++)
+            if(costs[i] == getMaximumValue(n))
+                return i;
+        return -1;
+    }
+
+    public int getMaximumValue(int n){
+        return n*(n-3)/2;
     }
 }

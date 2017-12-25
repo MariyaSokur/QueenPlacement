@@ -16,12 +16,4 @@ public class SimpleGenerator implements IGenerator {
                 dataSet[i][j] = ThreadLocalRandom.current().nextInt(1, m + 1);
         return dataSet;
     }
-
-    public void print(int[][] map){
-        for(int i=0; i< map.length; i++) {
-            for (int j = 0; j < map[0].length; j++)
-                System.out.print(map[i][j]);
-            System.out.print('\n');
-        }
-    }
 }

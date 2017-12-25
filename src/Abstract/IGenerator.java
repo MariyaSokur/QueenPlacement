@@ -7,5 +7,4 @@ import java.util.ArrayList;
  */
 public interface IGenerator {
      int[][] generate(int n, int m);
-    void print(int[][] map);
 }

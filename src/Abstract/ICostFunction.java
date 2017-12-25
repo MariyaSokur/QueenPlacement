@@ -5,4 +5,6 @@ package Abstract;
  */
 public interface ICostFunction {
     int[] evaluate(int[][] array);
+    int validate(int[] costs, int n);
+    int getMaximumValue(int n);
 }
